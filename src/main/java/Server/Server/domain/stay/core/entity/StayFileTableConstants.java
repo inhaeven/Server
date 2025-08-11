@@ -2,7 +2,8 @@ package Server.Server.domain.stay.core.entity;
 
 public final class StayFileTableConstants {
 
-	private StayFileTableConstants() {}
+	private StayFileTableConstants() {
+	}
 
 	public static final String TABLE_STAY_FILE = "stay_file";
 

@@ -14,5 +14,6 @@ public class StayTableConstants {
 	public static final String COLUMN_BADAPASS_DISCOUNT_RATE = "badapass_discount_rate";
 	public static final String COLUMN_TYPE = "type";
 
-	private StayTableConstants() {}
+	private StayTableConstants() {
+	}
 }

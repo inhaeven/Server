@@ -2,7 +2,8 @@ package Server.Server.domain.activity.core.entity;
 
 public final class ActivityFileTableConstants {
 
-	private ActivityFileTableConstants() {}
+	private ActivityFileTableConstants() {
+	}
 
 	public static final String TABLE_ACTIVITY_FILE = "activitt_file";
 

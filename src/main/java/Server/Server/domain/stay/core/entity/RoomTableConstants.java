@@ -2,7 +2,8 @@ package Server.Server.domain.stay.core.entity;
 
 public final class RoomTableConstants {
 
-	private RoomTableConstants() {}
+	private RoomTableConstants() {
+	}
 
 	public static final String TABLE_ROOM = "room";
 
