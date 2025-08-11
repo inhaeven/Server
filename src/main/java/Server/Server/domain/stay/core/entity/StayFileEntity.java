@@ -23,7 +23,7 @@ public class StayFileEntity {
 	@Column(name = StayFileTableConstants.COLUMN_URL, nullable = false)
 	private String url;
 
-	@JoinColumn(name = StayFileTableConstants.COLUMN_STAY_ID, nullable = false)
+	@Column(name = StayFileTableConstants.COLUMN_STAY_ID, nullable = false)
 	private Long stayId;
 
 	@Builder

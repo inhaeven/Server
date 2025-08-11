@@ -35,7 +35,7 @@ public class RoomEntity {
 	@Column(name = RoomTableConstants.COLUMN_IMAGE)
 	private String image;
 
-	@JoinColumn(name = RoomTableConstants.COLUMN_STAY_ID, nullable = false)
+	@Column(name = RoomTableConstants.COLUMN_STAY_ID, nullable = false)
 	private Long stayId;
 
 	@Column(name = RoomTableConstants.COLUMN_IS_ACTIVE, nullable = false)
