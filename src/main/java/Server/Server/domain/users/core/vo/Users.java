@@ -1,19 +1,19 @@
-package Server.Server.domain.user.core.vo;
+package Server.Server.domain.users.core.vo;
 
-import Server.Server.domain.user.core.entity.UserEntity;
-import Server.Server.domain.user.core.entity.enums.UserRole;
+import Server.Server.domain.users.core.entity.UsersEntity;
+import Server.Server.domain.users.core.entity.enums.UsersRole;
 import lombok.Getter;
 
 @Getter
-public class User {
+public class Users {
 
 	private final Long id;
 	private final String name;
 	private final String email;
 	private final String profileImage;
-	private final UserRole role;
+	private final UsersRole role;
 
-	public User(Long id, String name, String email, String profileImage, UserRole role) {
+	public Users(Long id, String name, String email, String profileImage, UsersRole role) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -21,8 +21,8 @@ public class User {
 		this.role = role;
 	}
 
-	public static User fromEntity(UserEntity entity) {
-		return new User(
+	public static Users fromEntity(UsersEntity entity) {
+		return new Users(
 			entity.getId(),
 			entity.getName(),
 			entity.getEmail(),

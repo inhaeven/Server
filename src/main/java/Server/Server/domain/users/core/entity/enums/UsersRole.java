@@ -1,12 +1,12 @@
-package Server.Server.domain.user.core.entity.enums;
+package Server.Server.domain.users.core.entity.enums;
 
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public enum UserRole {
+public enum UsersRole {
 	GUEST("이용자"),
 	HOST("제공자")
 	;
 
-	private final String userRole;
+	private final String usersRole;
 }
