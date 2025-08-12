@@ -20,16 +20,16 @@ public class BannerEntity {
 	@Column(name = BannerTableConstants.COLUMN_COVER, nullable = false)
 	private String cover;              // 배너 커버 이미지 URL
 
-	@Column(name = BannerTableConstants.COLUMN_ORDER, nullable = false)
-	private int order;                 // 노출 순서
+	@Column(name = BannerTableConstants.COLUMN_SEQUENCE, nullable = false)
+	private int sequence;                 // 노출 순서
 
 	@Column(name = BannerTableConstants.COLUMN_LINKED_URL)
 	private String linkedUrl;          // 클릭 시 이동 URL (optional)
 
 	@Builder
-	public BannerEntity(String cover, int order, String linkedUrl) {
+	public BannerEntity(String cover, int sequence, String linkedUrl) {
 		this.cover = cover;
-		this.order = order;
+		this.sequence = sequence;
 		this.linkedUrl = linkedUrl;
 	}
 }

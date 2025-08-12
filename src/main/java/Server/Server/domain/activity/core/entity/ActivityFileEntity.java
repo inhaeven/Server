@@ -22,8 +22,8 @@ public class ActivityFileEntity {
 	@Column(name = ActivityFileTableConstants.COLUMN_ID)
 	private Long id;
 
-	@Column(name = ActivityFileTableConstants.COLUMN_ORDER, nullable = false)
-	private int order;
+	@Column(name = ActivityFileTableConstants.COLUMN_SEQUENCE, nullable = false)
+	private int sequence;
 
 	@Column(name = ActivityFileTableConstants.COLUMN_URL, nullable = false)
 	private String url;
@@ -32,8 +32,8 @@ public class ActivityFileEntity {
 	private Long activityId;
 
 	@Builder
-	public ActivityFileEntity(int order, String url, Long activityId) {
-		this.order = order;
+	public ActivityFileEntity(int sequence, String url, Long activityId) {
+		this.sequence = sequence;
 		this.url = url;
 		this.activityId = activityId;
 	}

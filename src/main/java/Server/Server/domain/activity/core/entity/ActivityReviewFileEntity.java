@@ -17,8 +17,8 @@ public class ActivityReviewFileEntity {
 	@Column(name = ActivityReviewFileTableConstants.COLUMN_ID)
 	private Long id;
 
-	@Column(name = ActivityReviewFileTableConstants.COLUMN_ORDER, nullable = false)
-	private int order;
+	@Column(name = ActivityReviewFileTableConstants.COLUMN_SEQUENCE, nullable = false)
+	private int sequence;
 
 	@Column(name = ActivityReviewFileTableConstants.COLUMN_URL, nullable = false)
 	private String url;
@@ -27,8 +27,8 @@ public class ActivityReviewFileEntity {
 	private Long activityReviewId;
 
 	@Builder
-	public ActivityReviewFileEntity(int order, String url, Long activityReviewId) {
-		this.order = order;
+	public ActivityReviewFileEntity(int sequence, String url, Long activityReviewId) {
+		this.sequence = sequence;
 		this.url = url;
 		this.activityReviewId = activityReviewId;
 	}

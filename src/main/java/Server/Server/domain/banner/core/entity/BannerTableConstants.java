@@ -8,6 +8,6 @@ public final class BannerTableConstants {
 
 	public static final String COLUMN_ID = "id";
 	public static final String COLUMN_COVER = "cover";
-	public static final String COLUMN_ORDER = "order";
+	public static final String COLUMN_SEQUENCE = "sequence";
 	public static final String COLUMN_LINKED_URL = "linked_url";
 }

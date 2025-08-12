@@ -7,13 +7,13 @@ import lombok.Getter;
 public class StayFile {
 
 	private final Long id;
-	private final int order;
+	private final int sequence;
 	private final String url;
 	private final Long stayId;
 
-	public StayFile(Long id, int order, String url, Long stayId) {
+	public StayFile(Long id, int sequence, String url, Long stayId) {
 		this.id = id;
-		this.order = order;
+		this.sequence = sequence;
 		this.url = url;
 		this.stayId = stayId;
 	}
@@ -21,7 +21,7 @@ public class StayFile {
 	public static StayFile fromEntity(StayFileEntity entity) {
 		return new StayFile(
 			entity.getId(),
-			entity.getOrder(),
+			entity.getSequence(),
 			entity.getUrl(),
 			entity.getStayId()
 		);

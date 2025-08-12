@@ -17,8 +17,8 @@ public class StayReviewFileEntity {
 	@Column(name = StayReviewFileTableConstants.COLUMN_ID)
 	private Long id;
 
-	@Column(name = StayReviewFileTableConstants.COLUMN_ORDER, nullable = false)
-	private int order;
+	@Column(name = StayReviewFileTableConstants.COLUMN_SEQUENCE, nullable = false)
+	private int sequence;
 
 	@Column(name = StayReviewFileTableConstants.COLUMN_URL, nullable = false)
 	private String url;
@@ -27,8 +27,8 @@ public class StayReviewFileEntity {
 	private Long stayReviewId;
 
 	@Builder
-	public StayReviewFileEntity(int order, String url, Long stayReviewId) {
-		this.order = order;
+	public StayReviewFileEntity(int sequence, String url, Long stayReviewId) {
+		this.sequence = sequence;
 		this.url = url;
 		this.stayReviewId = stayReviewId;
 	}

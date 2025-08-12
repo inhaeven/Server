@@ -7,13 +7,13 @@ import lombok.Getter;
 public class ActivityReviewFile {
 
 	private final Long id;
-	private final int order;
+	private final int sequence;
 	private final String url;
 	private final Long activityReviewId;
 
-	public ActivityReviewFile(Long id, int order, String url, Long activityReviewId) {
+	public ActivityReviewFile(Long id, int sequence, String url, Long activityReviewId) {
 		this.id = id;
-		this.order = order;
+		this.sequence = sequence;
 		this.url = url;
 		this.activityReviewId = activityReviewId;
 	}
@@ -21,7 +21,7 @@ public class ActivityReviewFile {
 	public static ActivityReviewFile fromEntity(ActivityReviewFileEntity entity) {
 		return new ActivityReviewFile(
 			entity.getId(),
-			entity.getOrder(),
+			entity.getSequence(),
 			entity.getUrl(),
 			entity.getActivityReviewId()
 		);

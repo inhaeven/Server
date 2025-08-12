@@ -7,13 +7,13 @@ import lombok.Getter;
 public class StayReviewFile {
 
 	private final Long id;
-	private final int order;
+	private final int sequence;
 	private final String url;
 	private final Long stayReviewId;
 
-	public StayReviewFile(Long id, int order, String url, Long stayReviewId) {
+	public StayReviewFile(Long id, int sequence, String url, Long stayReviewId) {
 		this.id = id;
-		this.order = order;
+		this.sequence = sequence;
 		this.url = url;
 		this.stayReviewId = stayReviewId;
 	}
@@ -21,7 +21,7 @@ public class StayReviewFile {
 	public static StayReviewFile fromEntity(StayReviewFileEntity entity) {
 		return new StayReviewFile(
 			entity.getId(),
-			entity.getOrder(),
+			entity.getSequence(),
 			entity.getUrl(),
 			entity.getStayReviewId()
 		);

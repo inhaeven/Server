@@ -17,8 +17,8 @@ public class StayFileEntity {
 	@Column(name = StayFileTableConstants.COLUMN_ID)
 	private Long id;
 
-	@Column(name = StayFileTableConstants.COLUMN_ORDER, nullable = false)
-	private int order;
+	@Column(name = StayFileTableConstants.COLUMN_SEQUENCE, nullable = false)
+	private int sequence;
 
 	@Column(name = StayFileTableConstants.COLUMN_URL, nullable = false)
 	private String url;
@@ -27,8 +27,8 @@ public class StayFileEntity {
 	private Long stayId;
 
 	@Builder
-	public StayFileEntity(int order, String url, Long stayId) {
-		this.order = order;
+	public StayFileEntity(int sequence, String url, Long stayId) {
+		this.sequence = sequence;
 		this.url = url;
 		this.stayId = stayId;
 	}
