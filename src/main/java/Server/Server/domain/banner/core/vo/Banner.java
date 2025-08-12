@@ -1,4 +1,4 @@
-package Server.Server.domain.banner.vo;
+package Server.Server.domain.banner.core.vo;
 
 import Server.Server.domain.banner.core.entity.BannerEntity;
 import lombok.Getter;
