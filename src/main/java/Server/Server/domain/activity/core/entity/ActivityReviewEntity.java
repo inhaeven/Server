@@ -20,7 +20,7 @@ public class ActivityReviewEntity {
 	private Long id;
 
 	@Column(name = ActivityReviewTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Column(name = ActivityReviewTableConstants.COLUMN_RATE, nullable = false)
 	private int rate;
@@ -32,7 +32,7 @@ public class ActivityReviewEntity {
 	private String hostComment;
 
 	@Column(name = ActivityReviewTableConstants.COLUMN_HOST_COMMENT_CREATED_AT)
-	private LocalDateTime hostCommentCreatedAt;
+	private LocalDateTime hostCommentCreatedAt = LocalDateTime.now();
 
 	@Column(name = ActivityReviewTableConstants.COLUMN_REVIEWER_ID, nullable = false)
 	private Long reviewerId;

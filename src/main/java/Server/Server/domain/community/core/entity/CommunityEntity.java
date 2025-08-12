@@ -29,7 +29,7 @@ public class CommunityEntity {
 	private String content;
 
 	@Column(name = CommunityTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Column(name = CommunityTableConstants.COLUMN_LIKE_COUNT, nullable = false)
 	private int likeCount;

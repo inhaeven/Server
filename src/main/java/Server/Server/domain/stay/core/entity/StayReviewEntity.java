@@ -26,7 +26,7 @@ public class StayReviewEntity {
 	private Long stayId;
 
 	@Column(name = StayReviewTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Column(name = StayReviewTableConstants.COLUMN_RATE, nullable = false)
 	private int rate;
@@ -38,7 +38,7 @@ public class StayReviewEntity {
 	private String hostComment;
 
 	@Column(name = StayReviewTableConstants.COLUMN_HOST_COMMENT_CREATED_AT)
-	private LocalDateTime hostCommentCreatedAt;
+	private LocalDateTime hostCommentCreatedAt = LocalDateTime.now();
 
 	@Builder
 	public StayReviewEntity(Long reviewerId, Long stayId, LocalDateTime createdAt,

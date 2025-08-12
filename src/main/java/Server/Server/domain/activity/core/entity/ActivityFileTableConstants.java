@@ -5,7 +5,7 @@ public final class ActivityFileTableConstants {
 	private ActivityFileTableConstants() {
 	}
 
-	public static final String TABLE_ACTIVITY_FILE = "activitt_file";
+	public static final String TABLE_ACTIVITY_FILE = "activity_file";
 
 	public static final String COLUMN_ID = "id";
 	public static final String COLUMN_ORDER = "order";

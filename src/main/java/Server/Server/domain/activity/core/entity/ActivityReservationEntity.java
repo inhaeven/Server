@@ -29,7 +29,7 @@ public class ActivityReservationEntity {
 	private int guestCount;
 
 	@Column(name = ActivityReservationTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Builder
 	public ActivityReservationEntity(Long guestId, Long activitySessionId, int guestCount, LocalDateTime createdAt) {

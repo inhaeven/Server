@@ -26,7 +26,7 @@ public class CommunityCommentEntity {
 	private String content;
 
 	@Column(name = CommunityCommentTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Column(name = CommunityCommentTableConstants.COLUMN_PROFILE_IMAGE)
 	private String profileImage;

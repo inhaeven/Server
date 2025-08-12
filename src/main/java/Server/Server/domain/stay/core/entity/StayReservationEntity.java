@@ -36,7 +36,7 @@ public class StayReservationEntity {
 	private int guestCount;
 
 	@Column(name = StayReservationTableConstants.COLUMN_CREATED_AT, nullable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Builder
 	public StayReservationEntity(Long guestId, Long roomId, LocalDate checkIn, LocalDate checkOut,
